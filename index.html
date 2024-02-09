@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshanam Heights |Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+</head>
+<body>
+    <!-- header section -->
+    <header class="header">
+        <nav id="navbar">
+            <section id="tagline">
+                <img src="logo.jpg" alt="DarshanamGroup.com">
+                <p>Our work is our fame</p>
+            </section>
+            <ul>
+                <li class="navigation"><a href="#">Home</a></li>
+                <li class="navigation"><a href="#">Projects</a></li>
+                <li class="navigation"><a href="#">About us</a></li>
+            </ul>
+        </nav>
+        <div class="section_top">
+            <div class="content">
+                <h1>दर्शनम् Heights</h1>
+                <a href="#">welcome</a>
+            </div>
+        </div>
+    </header>   
+    <section class="our_work">
+        <dotlottie-player src="https://lottie.host/b40ef1f8-ee9a-48f3-8afc-19b0a9c98a40/saYPXcQxf6.lottie" background="transparent" speed="1" style="width: 500px; height: 500px" direction="1" playMode="normal" loop autoplay class="lottie"></dotlottie-player>
+        <section class="changetext">
+            <div class="wrap">
+                <span class="text static">We are </span>
+                <span class="text dynamic"></span>               
+            </div>
+            <script>
+                const text=document.querySelector(".dynamic");
+                const textLoad=()=>{
+                    setTimeout(()=>{
+                        text.textContent="Dream Maker";
+                    },0);
+                    setTimeout(()=>{
+                        text.textContent="Expected Worker";
+                    },4000);
+                    setTimeout(()=>{
+                        text.textContent="Home designer";
+                    },8000);
+                    setTimeout(()=>{
+                        text.textContent="Skyscrapper constructor";
+                    },12000);
+                }
+                textLoad();
+        </script>
+        </section>
+        <section id="client-section">
+            <h1 class="h-primary center">
+                Our Clients:
+            </h1>
+                <div id="clients">
+                    <div class="client-item">
+                        <img src="logo/logo11.png" alt="Apple | our client">
+    
+                </div>
+                <div id="clients">
+                    <div class="client-item">
+                        <img src="logo/logo2.jpg" alt="Apple | our client">
+    
+                </div>
+                <div id="clients">
+                    <div class="client-item">
+                        <img src="logo/logo3.png" alt="Apple | our client">
+    
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1 class="h-primary center">Contact Us:</h1>
+            <div id="contact-box">
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Enter Your Name...">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">E-mail:</label>
+                        <input type="email" name="name" id="email" placeholder="Enter Your E-mail...">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Phone:</label>
+                        <input type="phone" name="name" id="phone" placeholder="Enter Your Phone Number...">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Message:</label>
+                        <textarea name="message" id="message" col="30" rows="10" placeholder="Share your experience...">
+                        </textarea>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="center">
+                copyright &copy; www.online_eat.com , All rights reserved. 
+            </div>
+        </footer>
+</body>
+</html>
